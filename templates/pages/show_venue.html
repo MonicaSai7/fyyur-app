@@ -10,7 +10,10 @@
 			ID: {{ venue.id }}
 		</p>
 		<div class="genres">
-			{% for genre in venue.genres %}
+			{% set genres = venue.genres|trim('{') %}
+			{% set genres = genres|trim('}') %}
+			{% set genres_list = genres.split(',') %}
+			{% for genre in genres_list %}
 			<span class="genre">{{ genre }}</span>
 			{% endfor %}
 		</div>
@@ -75,7 +78,8 @@
 	</div>
 </section>
 
-<a href="/venues/{{ venue.id }}/edit"><button class="btn btn-primary btn-lg">Edit</button></a>
-
+<section>
+	<a href="/venues/{{ venue.id }}/edit"><button class="btn btn-primary btn-lg">Edit</button></a>
+</section>
 {% endblock %}
 

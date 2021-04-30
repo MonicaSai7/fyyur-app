@@ -10,7 +10,10 @@
 			ID: {{ artist.id }}
 		</p>
 		<div class="genres">
-			{% for genre in artist.genres %}
+			{% set genres = artist.genres|trim('{') %}
+			{% set genres = genres|trim('}') %}
+			{% set genres_list = genres.split(',') %}
+			{% for genre in genres_list %}
 			<span class="genre">{{ genre }}</span>
 			{% endfor %}
 		</div>
@@ -72,7 +75,23 @@
 	</div>
 </section>
 
-<a href="/artists/{{ artist.id }}/edit"><button class="btn btn-primary btn-lg">Edit</button></a>
-
+<section>
+	<a href="/artists/{{ artist.id }}/edit"><button class="btn btn-primary btn-lg">Edit Artist</button></a>
+	<button id="delete-button" class="btn btn-primary btn-lg" data-id="{{ artist.id }}">Delete Artist</button>
+</section>
+<script>
+	document.getElementById('delete-button').onclick = function(e) {
+		const artistId = e.target.dataset['id'];
+		fetch('/artists/' + artistId, {
+			method: 'DELETE'
+		})
+		.then(function() {
+			window.location.href = '/';
+		})
+		.catch(function (e) {
+			console.log('error', e)
+		})
+	}
+</script>
 {% endblock %}
 
