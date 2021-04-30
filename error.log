@@ -1,1 +1,955 @@
+127.0.0.1 - - [30/Apr/2021 15:21:03] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:21:03] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:21:03] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+127.0.0.1 - - [30/Apr/2021 15:21:35] "GET /artists/3/edit HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 490, in edit_artist
+    seeking_venue = artist.looking_for_venue,
+AttributeError: 'Artist' object has no attribute 'looking_for_venue'
 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 495, in edit_artist
+    flash('An error occurred. Artist ' + update_artist.name + ' could not be updated.')
+NameError: name 'update_artist' is not defined
+127.0.0.1 - - [30/Apr/2021 15:21:35] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:21:35] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:21:35] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:21:35] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:21:35] "GET /artists/3/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+/home/monica/fullstackND/fyyur-app/app.py:481: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm(
+127.0.0.1 - - [30/Apr/2021 15:21:47] "GET /artists/3/edit HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:21:47] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:21:47] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:22:13] "POST /artists/3/edit HTTP/1.1" 302 -
+127.0.0.1 - - [30/Apr/2021 15:22:13] "GET /artists/3 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:22:13] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:22:13] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:481: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm(
+127.0.0.1 - - [30/Apr/2021 15:22:25] "GET /artists/3/edit HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:22:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:22:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 514
+    "facebook_link": request.form["facebook_link"],
+    ^
+SyntaxError: invalid syntax
+(fullstack) monica@Lenovo:~/fullstackND/fyyur-app$ python app.py 
+  File "app.py", line 514
+    "facebook_link": request.form["facebook_link"],
+    ^
+SyntaxError: invalid syntax
+(fullstack) monica@Lenovo:~/fullstackND/fyyur-app$ python app.py 
+  File "app.py", line 582
+    "facebook_link": request.form["facebook_link"],
+    ^
+SyntaxError: invalid syntax
+(fullstack) monica@Lenovo:~/fullstackND/fyyur-app$ python app.py 
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+127.0.0.1 - - [30/Apr/2021 15:24:52] "POST /artists/3/edit HTTP/1.1" 302 -
+127.0.0.1 - - [30/Apr/2021 15:24:52] "GET /artists/3 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:24:52] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:24:52] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+/home/monica/fullstackND/fyyur-app/app.py:481: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm(
+127.0.0.1 - - [30/Apr/2021 15:27:03] "GET /artists/3/edit HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:05] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:05] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:08] "POST /artists/3/edit HTTP/1.1" 302 -
+127.0.0.1 - - [30/Apr/2021 15:27:08] "GET /artists/3 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:08] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:08] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:14] "GET /shows HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:14] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:14] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:16] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:16] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:23] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:23] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:23] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:25] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:27] "DELETE /venues/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 351, in delete_venue
+    return jsonify({'success': True})
+NameError: name 'jsonify' is not defined
+127.0.0.1 - - [30/Apr/2021 15:27:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:27] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:27] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:30] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:30] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:30] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:49] "GET /artists HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:49] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:49] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:50] "GET /artists/3 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:50] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:50] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:54] "DELETE /artists/3 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 660, in delete_artist
+    return jsonify({'success': True})
+NameError: name 'jsonify' is not defined
+127.0.0.1 - - [30/Apr/2021 15:27:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:54] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:54] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:56] "GET /artists HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:59] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:27:59] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:27:59] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:28:02] "GET /shows HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:28:02] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:28:02] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+127.0.0.1 - - [30/Apr/2021 15:29:05] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:29:05] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:29:05] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:29:07] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:29:07] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:29:07] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:29:57] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:29:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:29:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:30:15] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:30:15] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:30:15] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:32:05] "GET /venues/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 288, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_venue.html", line 14, in template
+    <span class="genre">{{% genre %}}</span>
+jinja2.exceptions.TemplateSyntaxError: unexpected '%'
+127.0.0.1 - - [30/Apr/2021 15:32:05] "GET /venues/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:05] "GET /venues/5?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:05] "GET /venues/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:05] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:05] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:15] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:15] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:32:15] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:32:23] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:23] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:32:23] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:32:35] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:32:35] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:32:35] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+{Alternative,Blues,Classical,Country}
+127.0.0.1 - - [30/Apr/2021 15:34:47] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:34:47] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:34:47] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+<class 'str'>
+127.0.0.1 - - [30/Apr/2021 15:34:59] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:34:59] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:34:59] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+127.0.0.1 - - [30/Apr/2021 15:36:39] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:36:39] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:36:39] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:36:48] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:36:48] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:36:48] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:38:40] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:38:40] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:38:40] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:43:06] "GET /venues/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 289, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_venue.html", line 13, in template
+    {% genres = venue.genres|trim('{')}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'genres'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+127.0.0.1 - - [30/Apr/2021 15:43:06] "GET /venues/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:06] "GET /venues/5?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:06] "GET /venues/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:06] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:07] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:18] "GET /venues/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 289, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_venue.html", line 13, in template
+    {% genres = venue.genres|trim('{') %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'genres'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+127.0.0.1 - - [30/Apr/2021 15:43:18] "GET /venues/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:18] "GET /venues/5?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:18] "GET /venues/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:18] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:19] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:24] "GET /venues/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 289, in show_venue
+    return render_template('pages/show_venue.html', venue=data)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_venue.html", line 13, in template
+    {% genres = venue.genres|trim('{') %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'genres'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+127.0.0.1 - - [30/Apr/2021 15:43:24] "GET /venues/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:24] "GET /venues/5?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:24] "GET /venues/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:24] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:24] "GET /venues/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:42] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:43] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:43:43] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:43:57] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:43:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:43:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:07] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:44:07] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:07] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:26] "GET /artists HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:44:26] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:26] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:29] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:44:30] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:30] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:44:32] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:32] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:296: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:44:34] "GET /venues/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:44:34] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:44:34] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:303: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:46:19] "POST /venues/create HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 304, in create_venue_submission
+    seeking_talent = request.form['seeking_talent'] == 'y'
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'seeking_talent'
+127.0.0.1 - - [30/Apr/2021 15:46:19] "GET /venues/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:19] "GET /venues/create?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:19] "GET /venues/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:19] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:19] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+/home/monica/fullstackND/fyyur-app/app.py:296: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:46:45] "GET /venues/create HTTP/1.1" 200 -
+/home/monica/fullstackND/fyyur-app/app.py:303: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:46:50] "POST /venues/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:51] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:46:51] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:46:54] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:54] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:46:54] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:46:56] "GET /venues/6 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:56] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:46:56] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:519: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+/home/monica/fullstackND/fyyur-app/app.py:537: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm(
+127.0.0.1 - - [30/Apr/2021 15:46:58] "GET /venues/6/edit HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:46:58] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:46:58] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:47:09] "POST /venues/6/edit HTTP/1.1" 302 -
+127.0.0.1 - - [30/Apr/2021 15:47:09] "GET /venues/6 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:47:09] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:47:09] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:47:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:47:16] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:47:16] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:589: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm()
+127.0.0.1 - - [30/Apr/2021 15:48:46] "GET /artists/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:48:46] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:48:46] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:597: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm()
+127.0.0.1 - - [30/Apr/2021 15:48:55] "POST /artists/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:48:55] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:48:55] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:589: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm()
+127.0.0.1 - - [30/Apr/2021 15:49:04] "GET /artists/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:04] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:49:04] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:597: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm()
+127.0.0.1 - - [30/Apr/2021 15:49:12] "POST /artists/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:12] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:49:12] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:49:15] "GET /artists HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:16] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:49:16] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:49:17] "GET /artists/4 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 458, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/monica/fullstackND/fyyur-app/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_artist.html", line 13, in block "content"
+    {% set genres = venue.genres|trim('{') %}
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'venue' is undefined
+127.0.0.1 - - [30/Apr/2021 15:49:17] "GET /artists/4?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:17] "GET /artists/4?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:17] "GET /artists/4?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:17] "GET /artists/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:18] "GET /artists/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:25] "GET /artists/4 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 458, in show_artist
+    return render_template('pages/show_artist.html', artist=data)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/monica/fullstackND/fyyur-app/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/monica/fullstackND/fyyur-app/templates/pages/show_artist.html", line 13, in block "content"
+    {% set genres = venue.genres|trim('{') %}
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'venue' is undefined
+127.0.0.1 - - [30/Apr/2021 15:49:25] "GET /artists/4?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:25] "GET /artists/4?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:25] "GET /artists/4?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:25] "GET /artists/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:49:59] "GET /artists/4 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:50:00] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:50:00] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:50:04] "DELETE /artists/4 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 645, in delete_artist
+    return jsonify({'success': True})
+NameError: name 'jsonify' is not defined
+127.0.0.1 - - [30/Apr/2021 15:50:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:50:04] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:50:04] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:296: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:52:26] "GET /venues/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:52:26] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:52:26] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:303: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:52:38] "POST /venues/create HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 304, in create_venue_submission
+    seeking_talent = request.form['seeking_talent'] == 'y'
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'seeking_talent'
+127.0.0.1 - - [30/Apr/2021 15:52:38] "GET /venues/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:52:38] "GET /venues/create?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:52:38] "GET /venues/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:52:38] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:52:38] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+/home/monica/fullstackND/fyyur-app/app.py:303: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:54:16] "POST /venues/create HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 304, in create_venue_submission
+    print( request.form['seeking_talent'])
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'seeking_talent'
+127.0.0.1 - - [30/Apr/2021 15:54:16] "GET /venues/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:16] "GET /venues/create?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:16] "GET /venues/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:16] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:16] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+/home/monica/fullstackND/fyyur-app/app.py:303: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+
+127.0.0.1 - - [30/Apr/2021 15:54:44] "POST /venues/create HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/monica/fullstackND/fyyur-app/app.py", line 305, in create_venue_submission
+    seeking_talent = request.form['seeking_talent'] == 'y'
+  File "/home/monica/anaconda3/envs/fullstack/lib/python3.8/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'seeking_talent'
+127.0.0.1 - - [30/Apr/2021 15:54:44] "GET /venues/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:44] "GET /venues/create?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:44] "GET /venues/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:45] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:54:45] "GET /venues/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:56:25] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:56:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:56:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:56:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:56:27] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:56:27] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:590: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm()
+127.0.0.1 - - [30/Apr/2021 15:56:29] "GET /artists/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:56:30] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:56:30] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:598: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ArtistForm()
+127.0.0.1 - - [30/Apr/2021 15:57:47] "POST /artists/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:57:47] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:57:47] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:57:50] "GET /artists HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:57:50] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:57:50] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:57:51] "GET /artists/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:57:52] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:57:52] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:08] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:58:08] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:08] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:11] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:58:11] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:11] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:18] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:58:18] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:18] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:19] "GET /venues/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:58:20] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:20] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:58:24] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:24] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:296: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+127.0.0.1 - - [30/Apr/2021 15:58:25] "GET /venues/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:58:26] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:58:26] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:303: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = VenueForm()
+We are looking international artists to hold concerts.
+127.0.0.1 - - [30/Apr/2021 15:59:51] "POST /venues/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:59:51] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:59:51] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:59:55] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:59:55] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:59:55] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:59:57] "GET /venues/7 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 15:59:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 15:59:57] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:02] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:02] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:709: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ShowForm()
+127.0.0.1 - - [30/Apr/2021 16:00:04] "GET /shows/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:04] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:04] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:06] "GET /venues HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:06] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:06] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:07] "GET /venues/7 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:08] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:08] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:09] "GET /artists HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:10] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:10] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:11] "GET /artists/5 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:11] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:12] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:13] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:13] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:709: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ShowForm()
+127.0.0.1 - - [30/Apr/2021 16:00:15] "GET /shows/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:15] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:15] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+/home/monica/fullstackND/fyyur-app/app.py:716: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ShowForm()
+127.0.0.1 - - [30/Apr/2021 16:00:25] "POST /shows/create HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:25] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:27] "GET /shows HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2021 16:00:27] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2021 16:00:27] "GET /static/ico/favicon.png HTTP/1.1" 404 -
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+[2021-04-30 16:05:07,062] INFO in app: Startesd
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+[2021-04-30 16:06:31,990] DEBUG in app: Started
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+[2021-04-30 16:06:44,212] ERROR in app: Started
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Restarting with stat
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+ * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 155-829-768
+16:08:59,954 app ERROR Started
+16:08:59,961 werkzeug WARNING  * Debugger is active!
+16:08:59,974 werkzeug INFO  * Debugger PIN: 155-829-768
+16:09:25,289 werkzeug INFO  * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+16:14:04,617 werkzeug WARNING  * Debugger is active!
+16:14:04,628 werkzeug INFO  * Debugger PIN: 155-829-768
+16:14:07,194 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:07] "[37mGET /artists/create HTTP/1.1[0m" 200 -
+16:14:09,412 root ERROR (builtins.TypeError) Not a boolean value: 'y'
+[SQL: INSERT INTO artists (name, city, state, phone, genres, image_link, facebook_link, website_link, seeking_venue, seeking_description) VALUES (%(name)s, %(city)s, %(state)s, %(phone)s, %(genres)s, %(image_link)s, %(facebook_link)s, %(website_link)s, %(seeking_venue)s, %(seeking_description)s) RETURNING artists.id]
+[parameters: [{'seeking_description': 'Looking for venues suitables for hip-hop and rap music.', 'image_link': 'https://lh3.googleusercontent.com/MtgStVOrvlqcjPeT- ... (195 characters truncated) ... 01718564', 'name': 'Augst D', 'facebook_link': 'https://bts.fandom.com/wiki/Agust_D_(mixtape)', 'city': 'Seoul', 'state': 'AL', 'seeking_venue': 'y'}]]
+16:14:09,417 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:09] "[37mPOST /artists/create HTTP/1.1[0m" 200 -
+16:14:09,592 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:09] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:09,619 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:09] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:42,126 werkzeug INFO  * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+16:14:43,266 werkzeug WARNING  * Debugger is active!
+16:14:43,279 werkzeug INFO  * Debugger PIN: 155-829-768
+16:14:44,332 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:44] "[37mGET /artists/create HTTP/1.1[0m" 200 -
+16:14:46,287 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:46] "[37mPOST /artists/create HTTP/1.1[0m" 200 -
+16:14:46,989 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:46] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:47,127 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:47] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:49,681 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:49] "[37mGET /artists HTTP/1.1[0m" 200 -
+16:14:49,847 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:49] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:49,874 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:49] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:51,792 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:51] "[37mGET /artists/6 HTTP/1.1[0m" 200 -
+16:14:51,980 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:51] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:52,42 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:52] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:54,511 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:54] "[37mGET /artists/6/edit HTTP/1.1[0m" 200 -
+16:14:54,714 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:54] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:14:54,764 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:14:54] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:15:25,85 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:25] "[32mPOST /artists/6/edit HTTP/1.1[0m" 302 -
+16:15:25,105 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:25] "[37mGET /artists/6 HTTP/1.1[0m" 200 -
+16:15:25,368 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:25] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:15:25,427 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:25] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:15:46,982 werkzeug INFO  * Detected change in '/home/monica/fullstackND/fyyur-app/app.py', reloading
+16:15:48,261 werkzeug WARNING  * Debugger is active!
+16:15:48,275 werkzeug INFO  * Debugger PIN: 155-829-768
+16:15:50,296 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:50] "[37mGET /artists/6/edit HTTP/1.1[0m" 200 -
+16:15:52,130 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:52] "[32mPOST /artists/6/edit HTTP/1.1[0m" 302 -
+16:15:52,177 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:52] "[37mGET /artists/6 HTTP/1.1[0m" 200 -
+16:15:52,436 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:52] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
+16:15:52,471 werkzeug INFO 127.0.0.1 - - [30/Apr/2021 16:15:52] "[33mGET /static/ico/favicon.png HTTP/1.1[0m" 404 -
