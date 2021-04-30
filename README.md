@@ -17,6 +17,15 @@ This app is nearly complete. It is only missing one thing… real data! While th
 
 We want Fyyur to be the next new platform that artists and musical venues can use to find each other, and discover new music shows. Let's make that happen!
 
+## Screenshots
+
+The artist detail page after creating using POST forms:<br><br>
+<img src="resources/artist.png"><br><br>
+The venue detail page after creating using POST forms:<br><br>
+<img src="resources/venue.png"><br><br>
+The shows page:<br><br>
+<img src="resources/show.png"><br><br>
+
 ## Tech Stack (Dependencies)
 
 ### 1. Backend Dependencies
@@ -179,4 +188,3 @@ python3 app.py
 
 6. **Verify on the Browser**<br>
 Navigate to project homepage [http://127.0.0.1:5000/](http://127.0.0.1:5000/) or [http://localhost:5000](http://localhost:5000) 
-
